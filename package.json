@@ -1,0 +1,46 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "Test of inuitcss 6.0.0-beta.3 implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McBenny/test2.git"
+  },
+  "keywords": [
+    "inuitcss"
+  ],
+  "author": "Ben Adam <ben@bang.com.au>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McBenny/test2/issues"
+  },
+  "homepage": "https://github.com/McBenny/test2#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "sass-mq": "^3.2.0"
+  },
+  "devDependencies": {
+    "glob": "^7.0.5",
+    "mocha": "^3.0.2",
+    "node-sass": "^3.8.0",
+    "sass-true": "^2.1.3",
+    "stylelint": "^7.1.0",
+    "stylelint-scss": "^1.3.4",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "0.0.12",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp.spritesmith": "^6.2.1",
+    "inuit-shared": "^0.1.5",
+    "pump": "^1.0.1"
+  }
+}

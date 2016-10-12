@@ -1,0 +1,127 @@
+/* 
+                                                                                                                                                                       
+                                                                                                                                                                       
+    PPPPPPPPPPPPPPPPP                                        iiii                                             tttt            iiii                                     
+    P::::::::::::::::P                                      i::::i                                         ttt:::t           i::::i                                    
+    P::::::PPPPPP:::::P                                      iiii                                          t:::::t            iiii                                     
+    PP:::::P     P:::::P                                                                                   t:::::t                                                     
+      P::::P     P:::::Paaaaaaaaaaaaa     ggggggggg   gggggiiiiiiinnnn  nnnnnnnn      aaaaaaaaaaaaa  ttttttt:::::ttttttt    iiiiiii    ooooooooooo   nnnn  nnnnnnnn    
+      P::::P     P:::::Pa::::::::::::a   g:::::::::ggg::::gi:::::in:::nn::::::::nn    a::::::::::::a t:::::::::::::::::t    i:::::i  oo:::::::::::oo n:::nn::::::::nn  
+      P::::PPPPPP:::::P aaaaaaaaa:::::a g:::::::::::::::::g i::::in::::::::::::::nn   aaaaaaaaa:::::at:::::::::::::::::t     i::::i o:::::::::::::::on::::::::::::::nn 
+      P:::::::::::::PP           a::::ag::::::ggggg::::::gg i::::inn:::::::::::::::n           a::::atttttt:::::::tttttt     i::::i o:::::ooooo:::::onn:::::::::::::::n
+      P::::PPPPPPPPP      aaaaaaa:::::ag:::::g     g:::::g  i::::i  n:::::nnnn:::::n    aaaaaaa:::::a      t:::::t           i::::i o::::o     o::::o  n:::::nnnn:::::n
+      P::::P            aa::::::::::::ag:::::g     g:::::g  i::::i  n::::n    n::::n  aa::::::::::::a      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n
+      P::::P           a::::aaaa::::::ag:::::g     g:::::g  i::::i  n::::n    n::::n a::::aaaa::::::a      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n
+      P::::P          a::::a    a:::::ag::::::g    g:::::g  i::::i  n::::n    n::::na::::a    a:::::a      t:::::t    tttttt i::::i o::::o     o::::o  n::::n    n::::n
+    PP::::::PP        a::::a    a:::::ag:::::::ggggg:::::g i::::::i n::::n    n::::na::::a    a:::::a      t::::::tttt:::::ti::::::io:::::ooooo:::::o  n::::n    n::::n
+    P::::::::P        a:::::aaaa::::::a g::::::::::::::::g i::::::i n::::n    n::::na:::::aaaa::::::a      tt::::::::::::::ti::::::io:::::::::::::::o  n::::n    n::::n
+    P::::::::P         a::::::::::aa:::a gg::::::::::::::g i::::::i n::::n    n::::n a::::::::::aa:::a       tt:::::::::::tti::::::i oo:::::::::::oo   n::::n    n::::n
+    PPPPPPPPPP          aaaaaaaaaa  aaaa   gggggggg::::::g iiiiiiii nnnnnn    nnnnnn  aaaaaaaaaa  aaaa         ttttttttttt  iiiiiiii   ooooooooooo     nnnnnn    nnnnnn
+                                                   g:::::g                                                                                                             
+                                       gggggg      g:::::g                                                                                                             
+                                       g:::::gg   gg:::::g                                                                                                             
+                                        g::::::ggg:::::::g                                                                                                             
+                                         gg:::::::::::::g                                                                                                              
+                                           ggg::::::ggg                                                                                                                
+                                              gggggg                                                                                                                   
+ */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+/**
+ *      - Pagination    FIND_PAGINATION
+ *          .first      FIND_FIRST
+ *          .previous   FIND_PREVIOUS
+ *          .current    FIND_CURRENT
+ *          .next       FIND_NEXT
+ *          .last       FIND_LAST
+ */
+
+
+
+ 
+
+//  FIND_PAGINATION
+/* 
+     /$$$$$$$                     /$$                       /$$     /$$                    
+    | $$__  $$                   |__/                      | $$    |__/                    
+    | $$  \ $$ /$$$$$$   /$$$$$$  /$$ /$$$$$$$   /$$$$$$  /$$$$$$   /$$  /$$$$$$  /$$$$$$$ 
+    | $$$$$$$/|____  $$ /$$__  $$| $$| $$__  $$ |____  $$|_  $$_/  | $$ /$$__  $$| $$__  $$
+    | $$____/  /$$$$$$$| $$  \ $$| $$| $$  \ $$  /$$$$$$$  | $$    | $$| $$  \ $$| $$  \ $$
+    | $$      /$$__  $$| $$  | $$| $$| $$  | $$ /$$__  $$  | $$ /$$| $$| $$  | $$| $$  | $$
+    | $$     |  $$$$$$$|  $$$$$$$| $$| $$  | $$|  $$$$$$$  |  $$$$/| $$|  $$$$$$/| $$  | $$
+    |__/      \_______/ \____  $$|__/|__/  |__/ \_______/   \___/  |__/ \______/ |__/  |__/
+                        /$$  \ $$                                                          
+                       |  $$$$$$/                                                          
+                        \______/                                                           
+ */
+.pagination {
+
+
+
+//  FIND_FIRST
+        /* 
+            888888 88 88""Yb .dP"Y8 888888 
+            88__   88 88__dP `Ybo."   88   
+            88""   88 88"Yb  o.`Y8b   88   
+            88     88 88  Yb 8bodP'   88   
+         */
+    &__first {
+
+    }
+
+
+
+//  FIND_PREVIOUS
+        /* 
+            88""Yb 88""Yb 888888 Yb    dP 88  dP"Yb  88   88 .dP"Y8 
+            88__dP 88__dP 88__    Yb  dP  88 dP   Yb 88   88 `Ybo." 
+            88"""  88"Yb  88""     YbdP   88 Yb   dP Y8   8P o.`Y8b 
+            88     88  Yb 888888    YP    88  YbodP  `YbodP' 8bodP' 
+         */
+    &__prev {
+
+    }
+
+
+
+//  FIND_CURRENT
+        /* 
+             dP""b8 88   88 88""Yb 88""Yb 888888 88b 88 888888 
+            dP   `" 88   88 88__dP 88__dP 88__   88Yb88   88   
+            Yb      Y8   8P 88"Yb  88"Yb  88""   88 Y88   88   
+             YboodP `YbodP' 88  Yb 88  Yb 888888 88  Y8   88   
+         */
+    .current {
+
+    }
+
+
+
+//  FIND_NEXT
+        /* 
+            88b 88 888888 Yb  dP 888888 
+            88Yb88 88__    YbdP    88   
+            88 Y88 88""    dPYb    88   
+            88  Y8 888888 dP  Yb   88   
+         */
+    &__next {
+
+    }
+
+
+
+//  FIND_LAST
+        /* 
+            88        db    .dP"Y8 888888 
+            88       dPYb   `Ybo."   88   
+            88  .o  dP__Yb  o.`Y8b   88   
+            88ood8 dP""""Yb 8bodP'   88   
+         */
+    &__last {
+
+    }
+}

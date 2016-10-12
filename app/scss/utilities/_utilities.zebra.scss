@@ -1,0 +1,67 @@
+/*
+
+                                          bbbbbbbb
+    ZZZZZZZZZZZZZZZZZZZ                   b::::::b                                                MMMMMMMM               MMMMMMMM  iiii
+    Z:::::::::::::::::Z                   b::::::b                                                M:::::::M             M:::::::M i::::i
+    Z:::::::::::::::::Z                   b::::::b                                                M::::::::M           M::::::::M  iiii
+    Z:::ZZZZZZZZ:::::Z                     b:::::b                                                M:::::::::M         M:::::::::M
+    ZZZZZ     Z:::::Z      eeeeeeeeeeee    b:::::bbbbbbbbb    rrrrr   rrrrrrrrr   aaaaaaaaaaaaa   M::::::::::M       M::::::::::Miiiiiii xxxxxxx      xxxxxxx
+            Z:::::Z      ee::::::::::::ee  b::::::::::::::bb  r::::rrr:::::::::r  a::::::::::::a  M:::::::::::M     M:::::::::::Mi:::::i  x:::::x    x:::::x
+           Z:::::Z      e::::::eeeee:::::eeb::::::::::::::::b r:::::::::::::::::r aaaaaaaaa:::::a M:::::::M::::M   M::::M:::::::M i::::i   x:::::x  x:::::x
+          Z:::::Z      e::::::e     e:::::eb:::::bbbbb:::::::brr::::::rrrrr::::::r         a::::a M::::::M M::::M M::::M M::::::M i::::i    x:::::xx:::::x
+         Z:::::Z       e:::::::eeeee::::::eb:::::b    b::::::b r:::::r     r:::::r  aaaaaaa:::::a M::::::M  M::::M::::M  M::::::M i::::i     x::::::::::x
+        Z:::::Z        e:::::::::::::::::e b:::::b     b:::::b r:::::r     rrrrrrraa::::::::::::a M::::::M   M:::::::M   M::::::M i::::i      x::::::::x
+       Z:::::Z         e::::::eeeeeeeeeee  b:::::b     b:::::b r:::::r           a::::aaaa::::::a M::::::M    M:::::M    M::::::M i::::i      x::::::::x
+    ZZZ:::::Z     ZZZZZe:::::::e           b:::::b     b:::::b r:::::r          a::::a    a:::::a M::::::M     MMMMM     M::::::M i::::i     x::::::::::x
+    Z::::::ZZZZZZZZ:::Ze::::::::e          b:::::bbbbbb::::::b r:::::r          a::::a    a:::::a M::::::M               M::::::Mi::::::i   x:::::xx:::::x
+    Z:::::::::::::::::Z e::::::::eeeeeeee  b::::::::::::::::b  r:::::r          a:::::aaaa::::::a M::::::M               M::::::Mi::::::i  x:::::x  x:::::x
+    Z:::::::::::::::::Z  ee:::::::::::::e  b:::::::::::::::b   r:::::r           a::::::::::aa:::aM::::::M               M::::::Mi::::::i x:::::x    x:::::x
+    ZZZZZZZZZZZZZZZZZZZ    eeeeeeeeeeeeee  bbbbbbbbbbbbbbbb    rrrrrrr            aaaaaaaaaa  aaaaMMMMMMMM               MMMMMMMMiiiiiiiixxxxxxx      xxxxxxx
+
+
+
+
+
+
+
+ */
+/**
+ * A simple set of classes to display alternate background colors in tables or any other elements (div, p, li, etc.) and be able to force or resist to the alternance
+ *  *  Usage:
+        <div class="zebra">
+            <div class="zebra__item">one</div>
+            <div class="zebra__item">two</div>
+            <div class="zebra__item zebra__item--force">three FORCE</div>
+            <div class="zebra__item zebra__item--force">four</div>
+            <div class="zebra__item">five</div>
+            <div class="zebra__item">six</div>
+            <div class="zebra__item">seven</div>
+            <div class="zebra__item zebra__item--resist">eight RESIST</div>
+            <div class="zebra__item">nine</div>
+            <div class="zebra__item">ten</div>
+        </div>
+
+    Produces:
+                    one
+            ########two
+            ########three FORCE
+            ########four
+                    five
+            ########six
+                    seven
+                    eight RESIST
+                    nine
+            ########ten
+
+ */
+.zebra {
+    > &__item {
+        &:nth-child(even),
+        &--force {
+            background: getColors(bg--2);
+        }
+        &--resist {
+            background: getColors(bg);
+        }
+    }
+}

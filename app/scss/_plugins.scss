@@ -1,0 +1,262 @@
+/* 
+                                                                                                                                 
+                                                                                                                                 
+    PPPPPPPPPPPPPPPPP   lllllll                                                          iiii                                    
+    P::::::::::::::::P  l:::::l                                                         i::::i                                   
+    P::::::PPPPPP:::::P l:::::l                                                          iiii                                    
+    PP:::::P     P:::::Pl:::::l                                                                                                  
+      P::::P     P:::::P l::::l uuuuuu    uuuuuu     ggggggggg   ggggg                 iiiiiiinnnn  nnnnnnnn        ssssssssss   
+      P::::P     P:::::P l::::l u::::u    u::::u    g:::::::::ggg::::g                 i:::::in:::nn::::::::nn    ss::::::::::s  
+      P::::PPPPPP:::::P  l::::l u::::u    u::::u   g:::::::::::::::::g                  i::::in::::::::::::::nn ss:::::::::::::s 
+      P:::::::::::::PP   l::::l u::::u    u::::u  g::::::ggggg::::::gg ---------------  i::::inn:::::::::::::::ns::::::ssss:::::s
+      P::::PPPPPPPPP     l::::l u::::u    u::::u  g:::::g     g:::::g  -:::::::::::::-  i::::i  n:::::nnnn:::::n s:::::s  ssssss 
+      P::::P             l::::l u::::u    u::::u  g:::::g     g:::::g  ---------------  i::::i  n::::n    n::::n   s::::::s      
+      P::::P             l::::l u::::u    u::::u  g:::::g     g:::::g                   i::::i  n::::n    n::::n      s::::::s   
+      P::::P             l::::l u:::::uuuu:::::u  g::::::g    g:::::g                   i::::i  n::::n    n::::nssssss   s:::::s 
+    PP::::::PP          l::::::lu:::::::::::::::uug:::::::ggggg:::::g                  i::::::i n::::n    n::::ns:::::ssss::::::s
+    P::::::::P          l::::::l u:::::::::::::::u g::::::::::::::::g                  i::::::i n::::n    n::::ns::::::::::::::s 
+    P::::::::P          l::::::l  uu::::::::uu:::u  gg::::::::::::::g                  i::::::i n::::n    n::::n s:::::::::::ss  
+    PPPPPPPPPP          llllllll    uuuuuuuu  uuuu    gggggggg::::::g                  iiiiiiii nnnnnn    nnnnnn  sssssssssss    
+                                                              g:::::g                                                            
+                                                  gggggg      g:::::g                                                            
+                                                  g:::::gg   gg:::::g                                                            
+                                                   g::::::ggg:::::::g                                                            
+                                                    gg:::::::::::::g                                                             
+                                                      ggg::::::ggg                                                               
+                                                         gggggg                                                                  
+ */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+/**
+ *      - Chosen            FIND_CHOSEN
+ *      - Cycle2            FIND_CYCLE2
+ *      - Gmap3             FIND_GMAP3
+ *      - Masonry           FIND_MASONRY
+ *      - Pikabu            FIND_PIKABU
+ */
+
+
+
+
+
+//  FIND_CHOSEN
+/* 
+      /$$$$$$  /$$                                              
+     /$$__  $$| $$                                              
+    | $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$$$$$$ 
+    | $$      | $$__  $$ /$$__  $$ /$$_____/ /$$__  $$| $$__  $$
+    | $$      | $$  \ $$| $$  \ $$|  $$$$$$ | $$$$$$$$| $$  \ $$
+    | $$    $$| $$  | $$| $$  | $$ \____  $$| $$_____/| $$  | $$
+    |  $$$$$$/| $$  | $$|  $$$$$$/ /$$$$$$$/|  $$$$$$$| $$  | $$
+     \______/ |__/  |__/ \______/ |_______/  \_______/|__/  |__/
+                                                                
+                                                                
+                                                                
+ */
+/**
+ *      http://harvesthq.github.io/chosen/
+ *      Chosen is a jQuery plugin that makes long, unwieldy select boxes much
+ *      more user-friendly.
+ */
+.chosen-container {
+    .chosen {
+        
+    }
+}
+
+
+
+
+
+//  FIND_CYCLE2
+/* 
+      /$$$$$$                      /$$            /$$$$$$ 
+     /$$__  $$                    | $$           /$$__  $$
+    | $$  \__/ /$$   /$$  /$$$$$$$| $$  /$$$$$$ |__/  \ $$
+    | $$      | $$  | $$ /$$_____/| $$ /$$__  $$  /$$$$$$/
+    | $$      | $$  | $$| $$      | $$| $$$$$$$$ /$$____/ 
+    | $$    $$| $$  | $$| $$      | $$| $$_____/| $$      
+    |  $$$$$$/|  $$$$$$$|  $$$$$$$| $$|  $$$$$$$| $$$$$$$$
+     \______/  \____  $$ \_______/|__/ \_______/|________/
+               /$$  | $$                                  
+              |  $$$$$$/                                  
+               \______/                                   
+ */
+/**
+ *      http://jquery.malsup.com/cycle2/
+ *      Cycle2 is a versatile slideshow plugin for jQuery built around
+ *      ease-of-use. It supports a declarative initialization style that allows
+ *      full customization without any scripting. Simply include the plugin,
+ *      declare your markup, and Cycle2 does the rest.
+ */
+.cycle-slideshow {
+    .cycle {
+        &__loader {             // http://jquery.malsup.com/cycle2/demo/loader.php
+
+        }
+        &-pager,
+        &__control--pager {     // http://jquery.malsup.com/cycle2/demo/pager.php
+
+        }
+        &-prev,
+        &__control--prev {      // http://jquery.malsup.com/cycle2/demo/prevnext.php
+
+        }
+        &-next,
+        &__control--next {      // http://jquery.malsup.com/cycle2/demo/prevnext.php
+
+        }
+        &-overlay,
+        &__overlay {            // http://jquery.malsup.com/cycle2/demo/overlay.php
+
+        }
+        &__slide {
+
+        }
+        &-caption,
+        &__caption {            // http://jquery.malsup.com/cycle2/demo/caption.php
+
+        }
+        &__progress-bar {       // http://jquery.malsup.com/cycle2/demo/progress.php
+
+        }
+    }
+}
+
+
+
+
+
+//  FIND_GMAP3
+/* 
+      /$$$$$$                                     /$$$$$$ 
+     /$$__  $$                                   /$$__  $$
+    | $$  \__/ /$$$$$$/$$$$   /$$$$$$   /$$$$$$ |__/  \ $$
+    | $$ /$$$$| $$_  $$_  $$ |____  $$ /$$__  $$   /$$$$$/
+    | $$|_  $$| $$ \ $$ \ $$  /$$$$$$$| $$  \ $$  |___  $$
+    | $$  \ $$| $$ | $$ | $$ /$$__  $$| $$  | $$ /$$  \ $$
+    |  $$$$$$/| $$ | $$ | $$|  $$$$$$$| $$$$$$$/|  $$$$$$/
+     \______/ |__/ |__/ |__/ \_______/| $$____/  \______/ 
+                                      | $$                
+                                      | $$                
+                                      |__/                
+ */
+/**
+ *      http://gmap3.net/
+ *      GMap3 is the ultimate plugin to create and manage Google Maps to jQuery.
+ *      Based on an advanced managment system, GMap3 allows you to finely
+ *      manipulate yours markers and others objects, to associate custom data
+ *      usable in each event. Discover all its potential and try to find its
+ *      limits!
+ */
+.gmap {
+    .map-canvas {
+
+    }
+}
+
+
+
+
+
+//  FIND_MASONRY
+/* 
+     /$$      /$$                                                            
+    | $$$    /$$$                                                            
+    | $$$$  /$$$$  /$$$$$$   /$$$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$   /$$
+    | $$ $$/$$ $$ |____  $$ /$$_____/ /$$__  $$| $$__  $$ /$$__  $$| $$  | $$
+    | $$  $$$| $$  /$$$$$$$|  $$$$$$ | $$  \ $$| $$  \ $$| $$  \__/| $$  | $$
+    | $$\  $ | $$ /$$__  $$ \____  $$| $$  | $$| $$  | $$| $$      | $$  | $$
+    | $$ \/  | $$|  $$$$$$$ /$$$$$$$/|  $$$$$$/| $$  | $$| $$      |  $$$$$$$
+    |__/     |__/ \_______/|_______/  \______/ |__/  |__/|__/       \____  $$
+                                                                    /$$  | $$
+                                                                   |  $$$$$$/
+                                                                    \______/ 
+ */
+/**
+ *      http://masonry.desandro.com/
+ *      Masonry is a JavaScript grid layout library. It works by placing
+ *      elements in optimal position based on available vertical space, sort of
+ *      like a mason fitting stones in a wall. You’ve probably seen it in use
+ *      all over the Internet.
+ */
+$masonry__brick--width: 23%;
+$masonry__gutter--width: 2%;
+.masonry {
+    &__brick {
+        width: $masonry__brick--width;
+        &--single {
+            width: $masonry__brick--width;
+        }
+        &--double {
+            width: 2 * $masonry__brick--width + $masonry__gutter--width;
+        }
+        &--triple {
+            width: 3 * $masonry__brick--width + 2 * $masonry__gutter--width;
+        }
+    }
+    &__gutter {
+        width: $masonry__gutter--width;
+    }
+    &__stamp {
+        display: block;
+        position: absolute;
+        &--one {
+            top: 0;
+            left: 0;
+        }
+        &--two {
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+
+
+
+//  FIND_PIKABU
+/* 
+     /$$$$$$$  /$$ /$$                 /$$                
+    | $$__  $$|__/| $$                | $$                
+    | $$  \ $$ /$$| $$   /$$  /$$$$$$ | $$$$$$$  /$$   /$$
+    | $$$$$$$/| $$| $$  /$$/ |____  $$| $$__  $$| $$  | $$
+    | $$____/ | $$| $$$$$$/   /$$$$$$$| $$  \ $$| $$  | $$
+    | $$      | $$| $$_  $$  /$$__  $$| $$  | $$| $$  | $$
+    | $$      | $$| $$ \  $$|  $$$$$$$| $$$$$$$/|  $$$$$$/
+    |__/      |__/|__/  \__/ \_______/|_______/  \______/ 
+                                                          
+                                                          
+                                                          
+ */
+/**
+ *      http://mobify.github.io/pikabu/
+ *      A speedy, flexible framework for off-canvas flyout panels.
+ */
+.m-pikabu {
+    &-viewport,
+    &__viewport {
+
+    }
+    &-sidebar,
+    &__sidebar {
+
+    }
+    &-container,
+    &__container {
+
+    }
+    &-overlay,
+    &__overlay {
+
+    }
+    &-nav-toggle,
+    &__nav-toggle {
+
+    }
+}

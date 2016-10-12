@@ -1,0 +1,24 @@
+{
+  "name": "test2",
+  "homepage": "https://github.com/McBenny/test2",
+  "authors": [
+    "Ben Adam <ben@bang.com.au>"
+  ],
+  "description": "Upgrade to inuitcss 6.0.0-beta.3",
+  "main": "",
+  "keywords": [
+    "inuitcss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuitcss": "^6.0.0-beta.3",
+    "jquery": "^3.1.0"
+  }
+}

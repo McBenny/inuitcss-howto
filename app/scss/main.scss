@@ -1,0 +1,202 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/*!*
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+ * Instead, copy and paste it into your own CSS directory and make additions,
+ * extension, and modifications there.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Rem..................Tools for converting pixel inputs into their rem
+ *                      equivalents.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Tables...............Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacing..............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ *                      classes..
+ * Hide.................Helper classes to hide content
+ */
+
+// SETTINGS
+@import "settings/settings.config";                                 //  mandatory
+
+@import "../../bower_components/inuitcss/settings/settings.core";            //  mandatory
+
+@import "settings/settings.global";                                 //  mandatory
+
+
+
+
+
+// TOOLS
+@import "../../bower_components/inuitcss/tools/tools.rem";                   //  mandatory
+@import "../../bower_components/inuitcss/tools/tools.font-size";             //  mandatory
+@import "../../bower_components/inuitcss/tools/tools.clearfix";              //  mandatory
+@import "../../bower_components/inuitcss/tools/tools.hidden";                //  mandatory
+@import "../../node_modules/sass-mq/mq";           //  mandatory for responsive stuf
+
+// @import "tools/tools.colors";                                     // Some useful functions to manipulate colors
+@import "tools/_tools.dev";                                        // Some useful classes for development only, not to be pushed on production site!!!
+
+
+
+
+
+// GENERIC
+@import "../../bower_components/inuitcss/generic/generic.box-sizing";        //  mandatory
+@import "../../bower_components/inuitcss/generic/generic.normalize";         //  mandatory
+@import "../../bower_components/inuitcss/generic/generic.reset";             //  mandatory
+@import "../../bower_components/inuitcss/generic/generic.shared";
+
+@import "generic/generic.basics";
+
+
+
+
+// ELEMENTS
+@import "../../bower_components/inuitcss/elements/elements.page";
+@import "../../bower_components/inuitcss/elements/elements.headings";
+@import "../../bower_components/inuitcss/elements/elements.images";
+@import "../../bower_components/inuitcss/elements/elements.tables";
+
+@import "elements/elements.forms";
+@import "elements/elements.headings";
+
+
+
+
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+@import "../../bower_components/inuitcss/objects/objects.wrapper";           //  mandatory: .o-wrapper
+@import "../../bower_components/inuitcss/objects/objects.layout";
+@import "../../bower_components/inuitcss/objects/objects.media";
+@import "../../bower_components/inuitcss/objects/objects.flag";
+@import "../../bower_components/inuitcss/objects/objects.list-bare";
+@import "../../bower_components/inuitcss/objects/objects.list-inline";
+@import "../../bower_components/inuitcss/objects/objects.box";
+@import "../../bower_components/inuitcss/objects/objects.block";
+@import "../../bower_components/inuitcss/objects/objects.ratio";
+@import "../../bower_components/inuitcss/objects/objects.crop";
+@import "../../bower_components/inuitcss/objects/objects.tables";
+@import "../../bower_components/inuitcss/objects/objects.pack";
+
+// @import "objects/objects.popins";
+// @import "objects/objects.split";                                    //  Data split in two columns
+
+
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+//@import "components/example.components.buttons";
+// @import "components/components.ghost-bar";
+// @import "components/components.navigation";
+// @import "components/components.pagination";
+// @import "components/components.search";
+// @import "components/components.socials";                             //  Styles applied on social networks components
+
+
+
+
+
+// UTILITIES
+@import "../../bower_components/inuitcss/utilities/utilities.clearfix";
+
+@import "../../bower_components/inuitcss/utilities/utilities.widths";
+@import "../../bower_components/inuitcss/utilities/utilities.headings";
+@import "../../bower_components/inuitcss/utilities/utilities.spacing";
+@import "../../bower_components/inuitcss/utilities/utilities.print";
+@import "../../bower_components/inuitcss/utilities/utilities.hide";
+
+@import "utilities/utilities.accessibility";                        //  Classes to hide content visually
+// @import "utilities/utilities.zebra";                                //  Classes to display zebra lines
+
+
+
+
+
+// DESIGN
+@import "design/_design.identity";                                  //  Main design styles
+
+
+
+
+//  FONTS
+@import "http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900";
+                                                    // Roboto is a neo-grotesque sans-serif typeface family developed by Google as the system font for its Android operating system.
+                                                    // Usage: font-family: 'Roboto', sans-serif;
+
+
+
+
+
+//  PLUGINS
+@import "plugins";                                  // Classes dedicated to elements manipulated or created by JS plugins
+
+
+
+
+
+//  SPRITES
+@import "sprites";                                  // If you generate sprites...

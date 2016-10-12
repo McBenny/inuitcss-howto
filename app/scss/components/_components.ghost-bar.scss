@@ -1,0 +1,38 @@
+/*
+
+                                                                                                                       bbbbbbbb
+            GGGGGGGGGGGGGhhhhhhh                                                        tttt                           b::::::b
+         GGG::::::::::::Gh:::::h                                                     ttt:::t                           b::::::b
+       GG:::::::::::::::Gh:::::h                                                     t:::::t                           b::::::b
+      G:::::GGGGGGGG::::Gh:::::h                                                     t:::::t                            b:::::b
+     G:::::G       GGGGGG h::::h hhhhh          ooooooooooo       ssssssssss   ttttttt:::::ttttttt                      b:::::bbbbbbbbb      aaaaaaaaaaaaa  rrrrr   rrrrrrrrr
+    G:::::G               h::::hh:::::hhh     oo:::::::::::oo   ss::::::::::s  t:::::::::::::::::t                      b::::::::::::::bb    a::::::::::::a r::::rrr:::::::::r
+    G:::::G               h::::::::::::::hh  o:::::::::::::::oss:::::::::::::s t:::::::::::::::::t                      b::::::::::::::::b   aaaaaaaaa:::::ar:::::::::::::::::r
+    G:::::G    GGGGGGGGGG h:::::::hhh::::::h o:::::ooooo:::::os::::::ssss:::::stttttt:::::::tttttt     ---------------  b:::::bbbbb:::::::b           a::::arr::::::rrrrr::::::r
+    G:::::G    G::::::::G h::::::h   h::::::ho::::o     o::::o s:::::s  ssssss       t:::::t           -:::::::::::::-  b:::::b    b::::::b    aaaaaaa:::::a r:::::r     r:::::r
+    G:::::G    GGGGG::::G h:::::h     h:::::ho::::o     o::::o   s::::::s            t:::::t           ---------------  b:::::b     b:::::b  aa::::::::::::a r:::::r     rrrrrrr
+    G:::::G        G::::G h:::::h     h:::::ho::::o     o::::o      s::::::s         t:::::t                            b:::::b     b:::::b a::::aaaa::::::a r:::::r
+     G:::::G       G::::G h:::::h     h:::::ho::::o     o::::ossssss   s:::::s       t:::::t    tttttt                  b:::::b     b:::::ba::::a    a:::::a r:::::r
+      G:::::GGGGGGGG::::G h:::::h     h:::::ho:::::ooooo:::::os:::::ssss::::::s      t::::::tttt:::::t                  b:::::bbbbbb::::::ba::::a    a:::::a r:::::r
+       GG:::::::::::::::G h:::::h     h:::::ho:::::::::::::::os::::::::::::::s       tt::::::::::::::t                  b::::::::::::::::b a:::::aaaa::::::a r:::::r
+         GGG::::::GGG:::G h:::::h     h:::::h oo:::::::::::oo  s:::::::::::ss          tt:::::::::::tt                  b:::::::::::::::b   a::::::::::aa:::ar:::::r
+            GGGGGG   GGGG hhhhhhh     hhhhhhh   ooooooooooo     sssssssssss              ttttttttttt                    bbbbbbbbbbbbbbbb     aaaaaaaaaa  aaaarrrrrrr
+
+
+
+
+
+
+
+ */
+/**
+ * A small component to display a ghost-bar appearing when the user scrolls the page.
+ */
+.ghost-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: gray;
+}

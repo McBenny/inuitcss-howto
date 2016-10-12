@@ -1,0 +1,51 @@
+/*
+
+
+       SSSSSSSSSSSSSSS                    lllllll   iiii          tttt
+     SS:::::::::::::::S                   l:::::l  i::::i      ttt:::t
+    S:::::SSSSSS::::::S                   l:::::l   iiii       t:::::t
+    S:::::S     SSSSSSS                   l:::::l              t:::::t
+    S:::::S           ppppp   ppppppppp    l::::l iiiiiiittttttt:::::ttttttt
+    S:::::S           p::::ppp:::::::::p   l::::l i:::::it:::::::::::::::::t
+     S::::SSSS        p:::::::::::::::::p  l::::l  i::::it:::::::::::::::::t
+      SS::::::SSSSS   pp::::::ppppp::::::p l::::l  i::::itttttt:::::::tttttt
+        SSS::::::::SS  p:::::p     p:::::p l::::l  i::::i      t:::::t
+           SSSSSS::::S p:::::p     p:::::p l::::l  i::::i      t:::::t
+                S:::::Sp:::::p     p:::::p l::::l  i::::i      t:::::t
+                S:::::Sp:::::p    p::::::p l::::l  i::::i      t:::::t    tttttt
+    SSSSSSS     S:::::Sp:::::ppppp:::::::pl::::::li::::::i     t::::::tttt:::::t
+    S::::::SSSSSS:::::Sp::::::::::::::::p l::::::li::::::i     tt::::::::::::::t
+    S:::::::::::::::SS p::::::::::::::pp  l::::::li::::::i       tt:::::::::::tt
+     SSSSSSSSSSSSSSS   p::::::pppppppp    lllllllliiiiiiii         ttttttttttt
+                       p:::::p
+                       p:::::p
+                      p:::::::p
+                      p:::::::p
+                      p:::::::p
+                      ppppppppp
+
+ */
+/**
+ * A simple set of classes to display elements aligned on the left and their corresponding part aligned right.
+ * Inspired by .split from inuit but without the need of dl + dt + dd
+ *
+ *
+ *      <div class="split">
+ *          <p><span class="split__title">Left element</span> <span class="split__data">Right element</span></p>
+ *          <p><span class="split__title">2014</span> <span class="split__data">1000 visitors</span></p>
+ *          <p><span class="split__title">2015</span> <span class="split__data">1280 visitors</span></p>
+ *          <p><span class="split__title">2016</span> <span class="split__data">1350 visitors</span></p>
+ *      </div>
+ */
+
+.split {
+    text-align: right;
+    &__title {
+        float: left;
+        clear: left;
+        text-align: left;
+    }
+    &__data {
+        margin: 0;
+    }
+}

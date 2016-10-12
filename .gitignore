@@ -1,0 +1,64 @@
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+
+
+### Sass ###
+.sass-cache
+*.css.map
+
+
+
+### Bower ###
+bower_components
+
+
+
+### Node ###
+# Logs
+logs
+*.log
+
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+
+
+
+### hidden files ###
+.DS_Store
+.editorconfig
+.git
+Thumbs.db
+
+
+
+### Numerous always-ignore extensions ###
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+
+
+### Other ###
+public
+
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/INSTALL*.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/UPGRADE.txt
+/README.txt

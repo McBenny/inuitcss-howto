@@ -1,0 +1,83 @@
+/*
+
+                                                                                                         dddddddd
+  IIIIIIIIII                                    iiii          tttt                                       d::::::d
+  I::::::::I                                   i::::i      ttt:::t                                       d::::::d
+  I::::::::I                                    iiii       t:::::t                                       d::::::d
+  II::::::II                                               t:::::t                                       d:::::d
+    I::::Innnn  nnnnnnnn    uuuuuu    uuuuuu  iiiiiiittttttt:::::ttttttt                         ddddddddd:::::d     eeeeeeeeeeee       mmmmmmm    mmmmmmm      ooooooooooo
+    I::::In:::nn::::::::nn  u::::u    u::::u  i:::::it:::::::::::::::::t                       dd::::::::::::::d   ee::::::::::::ee   mm:::::::m  m:::::::mm  oo:::::::::::oo
+    I::::In::::::::::::::nn u::::u    u::::u   i::::it:::::::::::::::::t                      d::::::::::::::::d  e::::::eeeee:::::eem::::::::::mm::::::::::mo:::::::::::::::o
+    I::::Inn:::::::::::::::nu::::u    u::::u   i::::itttttt:::::::tttttt     --------------- d:::::::ddddd:::::d e::::::e     e:::::em::::::::::::::::::::::mo:::::ooooo:::::o
+    I::::I  n:::::nnnn:::::nu::::u    u::::u   i::::i      t:::::t           -:::::::::::::- d::::::d    d:::::d e:::::::eeeee::::::em:::::mmm::::::mmm:::::mo::::o     o::::o
+    I::::I  n::::n    n::::nu::::u    u::::u   i::::i      t:::::t           --------------- d:::::d     d:::::d e:::::::::::::::::e m::::m   m::::m   m::::mo::::o     o::::o
+    I::::I  n::::n    n::::nu::::u    u::::u   i::::i      t:::::t                           d:::::d     d:::::d e::::::eeeeeeeeeee  m::::m   m::::m   m::::mo::::o     o::::o
+    I::::I  n::::n    n::::nu:::::uuuu:::::u   i::::i      t:::::t    tttttt                 d:::::d     d:::::d e:::::::e           m::::m   m::::m   m::::mo::::o     o::::o
+  II::::::IIn::::n    n::::nu:::::::::::::::uui::::::i     t::::::tttt:::::t                 d::::::ddddd::::::dde::::::::e          m::::m   m::::m   m::::mo:::::ooooo:::::o
+  I::::::::In::::n    n::::n u:::::::::::::::ui::::::i     tt::::::::::::::t                  d:::::::::::::::::d e::::::::eeeeeeee  m::::m   m::::m   m::::mo:::::::::::::::o
+  I::::::::In::::n    n::::n  uu::::::::uu:::ui::::::i       tt:::::::::::tt                   d:::::::::ddd::::d  ee:::::::::::::e  m::::m   m::::m   m::::m oo:::::::::::oo
+  IIIIIIIIIInnnnnn    nnnnnn    uuuuuuuu  uuuuiiiiiiii         ttttttttttt                      ddddddddd   ddddd    eeeeeeeeeeeeee  mmmmmm   mmmmmm   mmmmmm   ooooooooooo
+
+
+
+
+
+
+
+ */
+
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+/**
+ *      - utilities      FIND_UTILITIES
+ *      
+ */
+
+
+
+
+
+//  FIND_UTILITIES
+/*
+     /$$   /$$   /$$     /$$ /$$ /$$   /$$     /$$
+    | $$  | $$  | $$    |__/| $$|__/  | $$    |__/
+    | $$  | $$ /$$$$$$   /$$| $$ /$$ /$$$$$$   /$$  /$$$$$$   /$$$$$$$
+    | $$  | $$|_  $$_/  | $$| $$| $$|_  $$_/  | $$ /$$__  $$ /$$_____/
+    | $$  | $$  | $$    | $$| $$| $$  | $$    | $$| $$$$$$$$|  $$$$$$
+    | $$  | $$  | $$ /$$| $$| $$| $$  | $$ /$$| $$| $$_____/ \____  $$
+    |  $$$$$$/  |  $$$$/| $$| $$| $$  |  $$$$/| $$|  $$$$$$$ /$$$$$$$/
+     \______/    \___/  |__/|__/|__/   \___/  |__/ \_______/|_______/
+
+
+
+ */
+.demo {
+    code {
+        background: #ddd;
+        padding: 0.1em 0.3em;
+    }
+    hr {
+        margin: 1rem;
+    }
+    .greybox,
+    .graybox {
+        background: #89b5c1;
+        &--alternate {
+            background: #9ed2e1;
+        }
+    }
+    .reveal- {
+        &margins {
+            background: #fbcd9a;
+            padding: 1px;
+        }
+        &padding {
+            float: left;
+            background: #c2d087;
+        }
+    }
+}

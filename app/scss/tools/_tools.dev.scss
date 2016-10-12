@@ -1,0 +1,359 @@
+/* 
+                                                                                                      
+                                                                                                      
+                     DDDDDDDDDDDDD                                                                    
+                     D::::::::::::DDD                                                                 
+                     D:::::::::::::::DD                                                               
+                     DDD:::::DDDDD:::::D                                                              
+                       D:::::D    D:::::D     eeeeeeeeeeee  vvvvvvv           vvvvvvv                 
+                       D:::::D     D:::::D  ee::::::::::::ee v:::::v         v:::::v                  
+                       D:::::D     D:::::D e::::::eeeee:::::eev:::::v       v:::::v                   
+     ---------------   D:::::D     D:::::De::::::e     e:::::e v:::::v     v:::::v    --------------- 
+     -:::::::::::::-   D:::::D     D:::::De:::::::eeeee::::::e  v:::::v   v:::::v     -:::::::::::::- 
+     ---------------   D:::::D     D:::::De:::::::::::::::::e    v:::::v v:::::v      --------------- 
+                       D:::::D     D:::::De::::::eeeeeeeeeee      v:::::v:::::v                       
+                       D:::::D    D:::::D e:::::::e                v:::::::::v                        
+                     DDD:::::DDDDD:::::D  e::::::::e                v:::::::v                         
+                     D:::::::::::::::DD    e::::::::eeeeeeee         v:::::v                          
+                     D::::::::::::DDD       ee:::::::::::::e          v:::v                           
+                     DDDDDDDDDDDDD            eeeeeeeeeeeeee           vvv                            
+                                                                                                      
+                                                                                                      
+                                                                                                      
+                                                                                                      
+                                                                                                      
+                                                                                                      
+                                                                                                      
+ */
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+/**
+ *      - Mixins                FIND_MIXINS
+ *          .function tester    FIND_FCT_TEST
+ *          .color spots        FIND_COLORSPOT
+ *      - Palette               FIND_PALETTE
+ *          .colors             FIND_COLORS
+ *          .swatches           FIND_SWATCHES
+ *      - Utilities             FIND_UTILITIES
+ *          .table of content   FIND_TOC
+ *      - Debug                 FIND_DEBUG
+ */
+
+
+
+
+
+//  FIND_MIXINS
+/* 
+     /$$      /$$ /$$           /$$                    
+    | $$$    /$$$|__/          |__/                    
+    | $$$$  /$$$$ /$$ /$$   /$$ /$$ /$$$$$$$   /$$$$$$$
+    | $$ $$/$$ $$| $$|  $$ /$$/| $$| $$__  $$ /$$_____/
+    | $$  $$$| $$| $$ \  $$$$/ | $$| $$  \ $$|  $$$$$$ 
+    | $$\  $ | $$| $$  >$$  $$ | $$| $$  | $$ \____  $$
+    | $$ \/  | $$| $$ /$$/\  $$| $$| $$  | $$ /$$$$$$$/
+    |__/     |__/|__/|__/  \__/|__/|__/  |__/|_______/ 
+                                                       
+                                                       
+                                                       
+ */
+//  FIND_FCT_TEST
+        /* 
+            888888 88   88 88b 88  dP""b8 888888 88  dP"Yb  88b 88          888888 888888 .dP"Y8 888888 888888 88""Yb 
+            88__   88   88 88Yb88 dP   `"   88   88 dP   Yb 88Yb88 ________   88   88__   `Ybo."   88   88__   88__dP 
+            88""   Y8   8P 88 Y88 Yb        88   88 Yb   dP 88 Y88 """"""""   88   88""   o.`Y8b   88   88""   88"Yb  
+            88     `YbodP' 88  Y8  YboodP   88   88  YbodP  88  Y8            88   888888 8bodP'   88   888888 88  Yb 
+         */
+/**
+ * Runs a function ($function) on a test suite ($tests)
+ * http://www.sitepoint.com/testing-sass-function-5-minutes/
+ * @param  {Map} $tests         The map of values to pass to the function to test
+ *                              $test-map: (
+ *                                  keyTotest: expectedResult,
+ *                                  anothervaluetotest: anotherExpectedResult,
+ *                                  ...
+ *                              );
+ * @param  {String} $function   The name of the function to test
+ * @return {print}              Outputs a nice table of the results of the values contained into the map passed to the tested function
+ */
+@mixin run-tests($tests, $function) {
+    $output: '';
+    $length: length($tests);
+    $failing: 0;
+
+    @each $test, $expected-result in $tests {
+        $result: call($function, $test...);
+        $test-index: index(map-keys($tests), $test);
+        $output: $output + '\a Test #{$test-index} out of #{$length}... ';
+
+        @if $result == $expected-result {
+// Test passed
+            $output: $output + '0k ;-)';
+        } @else {
+// Test failed
+            $failing: $failing + 1;
+            $output: $output + 'KO :-(\a   Expected : `#{$expected-result}`.\a   Actual   : `#{$result}`.';
+        }
+    }
+
+// Print output
+    @error  'Started tests for function `#{$function}`\a '
+          + '-----------------------------------'
+          + $output + '\a '
+          + '-----------------------------------\a '
+          + 'Over: #{$length - $pass} test(s) out of #{$length} failing.';
+}
+
+
+
+//  FIND_COLORSPOT
+        /* 
+             dP""b8  dP"Yb  88      dP"Yb  88""Yb     .dP"Y8 88""Yb  dP"Yb  888888 .dP"Y8 
+            dP   `" dP   Yb 88     dP   Yb 88__dP     `Ybo." 88__dP dP   Yb   88   `Ybo." 
+            Yb      Yb   dP 88  .o Yb   dP 88"Yb      o.`Y8b 88"""  Yb   dP   88   o.`Y8b 
+             YboodP  YbodP  88ood8  YbodP  88  Yb     8bodP' 88      YbodP    88   8bodP' 
+         */
+/**
+ * Outputs the asked color as background-color, sets the text color to text-color or inverted text color depending on the contrast with the background color
+ * @param  {String} $bgColor The background color
+ * @return {String}          a piece of style
+ */
+@mixin colorSpot($bgColor) {
+    background: $bgColor;
+    color: #f00;
+    &:after {
+        content: "" + $bgColor;
+        color: #f00;
+    }
+}
+
+
+
+
+
+.development {
+
+
+
+//  FIND_PALETTE
+/* 
+     /$$$$$$$           /$$             /$$     /$$              
+    | $$__  $$         | $$            | $$    | $$              
+    | $$  \ $$ /$$$$$$ | $$  /$$$$$$  /$$$$$$ /$$$$$$    /$$$$$$ 
+    | $$$$$$$/|____  $$| $$ /$$__  $$|_  $$_/|_  $$_/   /$$__  $$
+    | $$____/  /$$$$$$$| $$| $$$$$$$$  | $$    | $$    | $$$$$$$$
+    | $$      /$$__  $$| $$| $$_____/  | $$ /$$| $$ /$$| $$_____/
+    | $$     |  $$$$$$$| $$|  $$$$$$$  |  $$$$/|  $$$$/|  $$$$$$$
+    |__/      \_______/|__/ \_______/   \___/   \___/   \_______/
+                                                                 
+                                                                 
+                                                                 
+ */
+    &__palette {
+        margin: 0 auto;
+        width: 50%;
+        &--derivatives {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            padding-left: siteConfig(base-font-size);
+            width: 500px;
+            text-align: left;
+            font-size: 0;
+            .palette__item {
+                display: inline-block!important;
+                bottom: -10px;
+                margin: 0.5em;
+                width: 140px!important;
+                height: 140px!important;
+                padding: 55px 0!important;
+                line-height: 14px!important;
+                font-size: siteConfig(base-font-size);
+            }
+        }
+    }
+
+
+
+//  FIND_COLORS
+        /* 
+             dP""b8  dP"Yb  88      dP"Yb  88""Yb .dP"Y8 
+            dP   `" dP   Yb 88     dP   Yb 88__dP `Ybo." 
+            Yb      Yb   dP 88  .o Yb   dP 88"Yb  o.`Y8b 
+             YboodP  YbodP  88ood8  YbodP  88  Yb 8bodP' 
+         */
+    &__colors {
+        @each $colorName, $colorValue in $colors-map {
+            &--#{$colorName} {
+                @include colorSpot($colorValue);
+            }
+        }
+    }
+
+
+
+//  FIND_SWATCHES
+        /* 
+            .dP"Y8 Yb        dP    db    888888  dP""b8 88  88 888888 .dP"Y8 
+            `Ybo."  Yb  db  dP    dPYb     88   dP   `" 88  88 88__   `Ybo." 
+            o.`Y8b   YbdPYbdP    dP__Yb    88   Yb      888888 88""   o.`Y8b 
+            8bodP'    YP  YP    dP""""Yb   88    YboodP 88  88 888888 8bodP' 
+         */
+    .palette__item {
+        position: relative;
+        margin-bottom: 1em;
+        border: 2px solid getColors(text);
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        padding: 70px 0;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        &:after {
+            display: block;
+            font-weight: normal;
+        }
+    }
+}
+
+
+
+
+
+//  FIND_UTILITIES
+/* 
+     /$$   /$$   /$$     /$$ /$$ /$$   /$$     /$$                    
+    | $$  | $$  | $$    |__/| $$|__/  | $$    |__/                    
+    | $$  | $$ /$$$$$$   /$$| $$ /$$ /$$$$$$   /$$  /$$$$$$   /$$$$$$$
+    | $$  | $$|_  $$_/  | $$| $$| $$|_  $$_/  | $$ /$$__  $$ /$$_____/
+    | $$  | $$  | $$    | $$| $$| $$  | $$    | $$| $$$$$$$$|  $$$$$$ 
+    | $$  | $$  | $$ /$$| $$| $$| $$  | $$ /$$| $$| $$_____/ \____  $$
+    |  $$$$$$/  |  $$$$/| $$| $$| $$  |  $$$$/| $$|  $$$$$$$ /$$$$$$$/
+     \______/    \___/  |__/|__/|__/   \___/  |__/ \_______/|_______/ 
+                                                                      
+                                                                      
+                                                                      
+ */
+.dev {
+
+
+
+//  FIND_TOC
+        /* 
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888 
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88   
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88   
+         */
+    &__toc {
+        .done {
+            color: green;
+        }
+        .to-do {
+            color: red;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+    }
+    code {
+        display: inline-block;
+        border: 1px solid getColors(text--4);
+        background: getColors(bg--2);
+        padding: 0 3px;
+        font-family: monospace;
+        color: getColors(text);
+        white-space: pre-wrap;
+        &.block {
+            display: block;
+            padding: 0.5rem 1rem;;
+        }
+    }
+    .visible-container {
+        border: 1px solid #999;
+        background-color: #ccc;
+    }
+    .bg {
+        &--1 {
+            background-color: rgba(red, 0.35);
+        }
+        &--12 {
+            background-color: rgba(red, 0.55);
+        }
+        &--2 {
+            background-color: rgba(green, 0.35);
+        }
+        &--22 {
+            background-color: rgba(green, 0.55);
+        }
+        &--3 {
+            background-color: rgba(blue, 0.35);
+        }
+        &--32 {
+            background-color: rgba(blue, 0.55);
+        }
+    }
+}
+
+
+
+
+
+//  FIND_DEBUG
+/* 
+     /$$$$$$$            /$$                          
+    | $$__  $$          | $$                          
+    | $$  \ $$  /$$$$$$ | $$$$$$$  /$$   /$$  /$$$$$$ 
+    | $$  | $$ /$$__  $$| $$__  $$| $$  | $$ /$$__  $$
+    | $$  | $$| $$$$$$$$| $$  \ $$| $$  | $$| $$  \ $$
+    | $$  | $$| $$_____/| $$  | $$| $$  | $$| $$  | $$
+    | $$$$$$$/|  $$$$$$$| $$$$$$$/|  $$$$$$/|  $$$$$$$
+    |_______/  \_______/|_______/  \______/  \____  $$
+                                             /$$  \ $$
+                                            |  $$$$$$/
+                                             \______/ 
+ */
+.debug {
+/* Outline all classes. */
+    [class] {
+        outline: 5px solid lightgrey;
+    }
+
+/* Outline all BEM Elements. */
+    [class*="__"] {
+        outline: 5px solid grey;
+    }
+
+/* Outline all BEM Modifiers. */
+    [class*="--"] {
+        outline: 5px solid darkgrey;
+    }
+
+/* Outline all Object classes. */
+    [class^="o-"],
+    [class*=" o-"] {
+        outline: 5px solid orange;
+    }
+
+/* Outline all Component classes. */
+    [class^="c-"],
+    [class*=" c-"] {
+        outline: 5px solid cyan;
+    }
+
+/* Outline all Responsive classes. */
+    [class*="@"] {
+        outline: 5px solid rosybrown;
+    }
+
+/* Outline all Hack classes. */
+    [class^="_"] {
+        outline: 5px solid red;
+    }
+}

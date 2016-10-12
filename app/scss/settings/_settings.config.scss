@@ -1,0 +1,184 @@
+/*
+
+
+            CCCCCCCCCCCCC                                      ffffffffffffffff    iiii
+         CCC::::::::::::C                                     f::::::::::::::::f  i::::i
+       CC:::::::::::::::C                                    f::::::::::::::::::f  iiii
+      C:::::CCCCCCCC::::C                                    f::::::fffffff:::::f
+     C:::::C       CCCCCC   ooooooooooo   nnnn  nnnnnnnn     f:::::f       ffffffiiiiiii    ggggggggg   ggggg
+    C:::::C               oo:::::::::::oo n:::nn::::::::nn   f:::::f             i:::::i   g:::::::::ggg::::g
+    C:::::C              o:::::::::::::::on::::::::::::::nn f:::::::ffffff        i::::i  g:::::::::::::::::g
+    C:::::C              o:::::ooooo:::::onn:::::::::::::::nf::::::::::::f        i::::i g::::::ggggg::::::gg
+    C:::::C              o::::o     o::::o  n:::::nnnn:::::nf::::::::::::f        i::::i g:::::g     g:::::g
+    C:::::C              o::::o     o::::o  n::::n    n::::nf:::::::ffffff        i::::i g:::::g     g:::::g
+    C:::::C              o::::o     o::::o  n::::n    n::::n f:::::f              i::::i g:::::g     g:::::g
+     C:::::C       CCCCCCo::::o     o::::o  n::::n    n::::n f:::::f              i::::i g::::::g    g:::::g
+      C:::::CCCCCCCC::::Co:::::ooooo:::::o  n::::n    n::::nf:::::::f            i::::::ig:::::::ggggg:::::g
+       CC:::::::::::::::Co:::::::::::::::o  n::::n    n::::nf:::::::f            i::::::i g::::::::::::::::g
+         CCC::::::::::::C oo:::::::::::oo   n::::n    n::::nf:::::::f            i::::::i  gg::::::::::::::g
+            CCCCCCCCCCCCC   ooooooooooo     nnnnnn    nnnnnnfffffffff            iiiiiiii    gggggggg::::::g
+                                                                                                     g:::::g
+                                                                                         gggggg      g:::::g
+                                                                                         g:::::gg   gg:::::g
+                                                                                          g::::::ggg:::::::g
+                                                                                           gg:::::::::::::g
+                                                                                             ggg::::::ggg
+                                                                                                gggggg
+ */
+
+// A map of global config settings. Define any project-level configuration,
+// feature switches, etc. in here.
+        /*
+            888888    db    88""Yb 88     888888      dP"Yb  888888      dP""b8  dP"Yb  88b 88 888888 888888 88b 88 888888
+              88     dPYb   88__dP 88     88__       dP   Yb 88__       dP   `" dP   Yb 88Yb88   88   88__   88Yb88   88
+              88    dP__Yb  88""Yb 88  .o 88""       Yb   dP 88""       Yb      Yb   dP 88 Y88   88   88""   88 Y88   88
+              88   dP""""Yb 88oodP 88ood8 888888      YbodP  88          YboodP  YbodP  88  Y8   88   888888 88  Y8   88
+         */
+/**
+ *      - Inuit stuf                FIND_INUITCONFIG
+ *      - Site stuf                 FIND_SITECONFIG
+ *      - Colors                    FIND_COLORS
+ *      - Dimensions                FIND_DIMENSIONS
+ */
+
+
+
+
+
+//  FIND_INUITCONFIG
+/*
+     /$$$$$$                     /$$   /$$           /$$$$$$                       /$$$$$$  /$$
+    |_  $$_/                    |__/  | $$          /$$__  $$                     /$$__  $$|__/
+      | $$   /$$$$$$$  /$$   /$$ /$$ /$$$$$$       | $$  \__/  /$$$$$$  /$$$$$$$ | $$  \__/ /$$  /$$$$$$
+      | $$  | $$__  $$| $$  | $$| $$|_  $$_//$$$$$$| $$       /$$__  $$| $$__  $$| $$$$    | $$ /$$__  $$
+      | $$  | $$  \ $$| $$  | $$| $$  | $$ |______/| $$      | $$  \ $$| $$  \ $$| $$_/    | $$| $$  \ $$
+      | $$  | $$  | $$| $$  | $$| $$  | $$ /$$     | $$    $$| $$  | $$| $$  | $$| $$      | $$| $$  | $$
+     /$$$$$$| $$  | $$|  $$$$$$/| $$  |  $$$$/     |  $$$$$$/|  $$$$$$/| $$  | $$| $$      | $$|  $$$$$$$
+    |______/|__/  |__/ \______/ |__/   \___/        \______/  \______/ |__/  |__/|__/      |__/ \____  $$
+                                                                                                /$$  \ $$
+                                                                                               |  $$$$$$/
+                                                                                                \______/
+ */
+$inuit-config: (
+    env: dev,
+    healthcheck: false,
+    debug: true,
+);
+
+// Example usage:
+// @include inuitConfig(env)
+// @if (inuitConfig(debug) == true) { ...  }
+@function inuitConfig($key) {
+    @if map-has-key($inuit-config, $key) {
+        @return map-get($inuit-config, $key);
+    }
+    @warn "Unknown `#{$key}` in $inuit-config.";
+    @return null;
+}
+
+
+
+
+
+//  FIND_SITECONFIG
+/*
+      /$$$$$$  /$$   /$$                        /$$$$$$                       /$$$$$$  /$$
+     /$$__  $$|__/  | $$                       /$$__  $$                     /$$__  $$|__/
+    | $$  \__/ /$$ /$$$$$$    /$$$$$$         | $$  \__/  /$$$$$$  /$$$$$$$ | $$  \__/ /$$  /$$$$$$
+    |  $$$$$$ | $$|_  $$_/   /$$__  $$ /$$$$$$| $$       /$$__  $$| $$__  $$| $$$$    | $$ /$$__  $$
+     \____  $$| $$  | $$    | $$$$$$$$|______/| $$      | $$  \ $$| $$  \ $$| $$_/    | $$| $$  \ $$
+     /$$  \ $$| $$  | $$ /$$| $$_____/        | $$    $$| $$  | $$| $$  | $$| $$      | $$| $$  | $$
+    |  $$$$$$/| $$  |  $$$$/|  $$$$$$$        |  $$$$$$/|  $$$$$$/| $$  | $$| $$      | $$|  $$$$$$$
+     \______/ |__/   \___/   \_______/         \______/  \______/ |__/  |__/|__/      |__/ \____  $$
+                                                                                           /$$  \ $$
+                                                                                          |  $$$$$$/
+                                                                                           \______/
+ */
+$site-config: (
+    font: Roboto,
+    fontTitle: "Times New Roman",
+    base-font-size: 16px
+);
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+
+@function siteConfig($key) {
+    @if map-has-key($site-config, $key) {
+        @return map-get($site-config, $key);
+    }
+    @warn "Unknown `#{$key}` in $site-config.";
+    @return null;
+}
+
+
+
+
+
+//  FIND_COLORS
+/* 
+      /$$$$$$            /$$                              
+     /$$__  $$          | $$                              
+    | $$  \__/  /$$$$$$ | $$  /$$$$$$   /$$$$$$   /$$$$$$$
+    | $$       /$$__  $$| $$ /$$__  $$ /$$__  $$ /$$_____/
+    | $$      | $$  \ $$| $$| $$  \ $$| $$  \__/|  $$$$$$ 
+    | $$    $$| $$  | $$| $$| $$  | $$| $$       \____  $$
+    |  $$$$$$/|  $$$$$$/| $$|  $$$$$$/| $$       /$$$$$$$/
+     \______/  \______/ |__/ \______/ |__/      |_______/ 
+                                                          
+                                                          
+                                                          
+ */
+$colors-map: (
+    bg:                 #fff,
+    bg--2:              #f2f2f2,
+    text:               #222,
+    text--2:            #1b1b1b,
+    text--3:            #787878,
+    text--4:            #878787,
+    brand:              #0085b2,
+    brand--2:           #005bab
+
+//  base-ui-color:      getColors(text)
+);
+
+@function getColors($key) {
+    @if map-has-key($colors-map, $key) {
+        @return map-get($colors-map, $key);
+    }
+    @warn "Unknown `#{$key}` in $colors-map.";
+    @return null;
+}
+
+
+
+
+
+//  FIND_DIMENSIONS
+/*
+     /$$$$$$$  /$$                                             /$$
+    | $$__  $$|__/                                            |__/
+    | $$  \ $$ /$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$   /$$$$$$$ /$$  /$$$$$$  /$$$$$$$   /$$$$$$$
+    | $$  | $$| $$| $$_  $$_  $$ /$$__  $$| $$__  $$ /$$_____/| $$ /$$__  $$| $$__  $$ /$$_____/
+    | $$  | $$| $$| $$ \ $$ \ $$| $$$$$$$$| $$  \ $$|  $$$$$$ | $$| $$  \ $$| $$  \ $$|  $$$$$$
+    | $$  | $$| $$| $$ | $$ | $$| $$_____/| $$  | $$ \____  $$| $$| $$  | $$| $$  | $$ \____  $$
+    | $$$$$$$/| $$| $$ | $$ | $$|  $$$$$$$| $$  | $$ /$$$$$$$/| $$|  $$$$$$/| $$  | $$ /$$$$$$$/
+    |_______/ |__/|__/ |__/ |__/ \_______/|__/  |__/|_______/ |__/ \______/ |__/  |__/|_______/
+
+
+
+ */
+$dimensions-map: (
+    main-section-width: 940px
+);
+
+@function getDimensions($key) {
+    @if map-has-key($dimensions-map, $key) {
+        @return map-get($dimensions-map, $key);
+    }
+    @warn "Unknown `#{$key}` in $dimensions-map.";
+    @return null;
+}

@@ -1,0 +1,66 @@
+/*
+
+                                                                                                 dddddddd
+    TTTTTTTTTTTTTTTTTTTTTTT  iiii  lllllll         tttt                                          d::::::d                    AAA                                                  lllllll
+    T:::::::::::::::::::::T i::::i l:::::l      ttt:::t                                          d::::::d                   A:::A                                                 l:::::l
+    T:::::::::::::::::::::T  iiii  l:::::l      t:::::t                                          d::::::d                  A:::::A                                                l:::::l
+    T:::::TT:::::::TT:::::T        l:::::l      t:::::t                                          d:::::d                  A:::::::A                                               l:::::l
+    TTTTTT  T:::::T  TTTTTTiiiiiii  l::::lttttttt:::::ttttttt        eeeeeeeeeeee        ddddddddd:::::d                 A:::::::::A         nnnn  nnnnnnnn       ggggggggg   gggggl::::l     eeeeeeeeeeee        ssssssssss
+            T:::::T        i:::::i  l::::lt:::::::::::::::::t      ee::::::::::::ee    dd::::::::::::::d                A:::::A:::::A        n:::nn::::::::nn    g:::::::::ggg::::gl::::l   ee::::::::::::ee    ss::::::::::s
+            T:::::T         i::::i  l::::lt:::::::::::::::::t     e::::::eeeee:::::ee d::::::::::::::::d               A:::::A A:::::A       n::::::::::::::nn  g:::::::::::::::::gl::::l  e::::::eeeee:::::eess:::::::::::::s
+            T:::::T         i::::i  l::::ltttttt:::::::tttttt    e::::::e     e:::::ed:::::::ddddd:::::d              A:::::A   A:::::A      nn:::::::::::::::ng::::::ggggg::::::ggl::::l e::::::e     e:::::es::::::ssss:::::s
+            T:::::T         i::::i  l::::l      t:::::t          e:::::::eeeee::::::ed::::::d    d:::::d             A:::::A     A:::::A       n:::::nnnn:::::ng:::::g     g:::::g l::::l e:::::::eeeee::::::e s:::::s  ssssss
+            T:::::T         i::::i  l::::l      t:::::t          e:::::::::::::::::e d:::::d     d:::::d            A:::::AAAAAAAAA:::::A      n::::n    n::::ng:::::g     g:::::g l::::l e:::::::::::::::::e    s::::::s
+            T:::::T         i::::i  l::::l      t:::::t          e::::::eeeeeeeeeee  d:::::d     d:::::d           A:::::::::::::::::::::A     n::::n    n::::ng:::::g     g:::::g l::::l e::::::eeeeeeeeeee        s::::::s
+            T:::::T         i::::i  l::::l      t:::::t    tttttte:::::::e           d:::::d     d:::::d          A:::::AAAAAAAAAAAAA:::::A    n::::n    n::::ng::::::g    g:::::g l::::l e:::::::e           ssssss   s:::::s
+          TT:::::::TT      i::::::il::::::l     t::::::tttt:::::te::::::::e          d::::::ddddd::::::dd        A:::::A             A:::::A   n::::n    n::::ng:::::::ggggg:::::gl::::::le::::::::e          s:::::ssss::::::s
+          T:::::::::T      i::::::il::::::l     tt::::::::::::::t e::::::::eeeeeeee   d:::::::::::::::::d       A:::::A               A:::::A  n::::n    n::::n g::::::::::::::::gl::::::l e::::::::eeeeeeee  s::::::::::::::s
+          T:::::::::T      i::::::il::::::l       tt:::::::::::tt  ee:::::::::::::e    d:::::::::ddd::::d      A:::::A                 A:::::A n::::n    n::::n  gg::::::::::::::gl::::::l  ee:::::::::::::e   s:::::::::::ss
+          TTTTTTTTTTT      iiiiiiiillllllll         ttttttttttt      eeeeeeeeeeeeee     ddddddddd   ddddd     AAAAAAA                   AAAAAAAnnnnnn    nnnnnn    gggggggg::::::gllllllll    eeeeeeeeeeeeee    sssssssssss
+                                                                                                                                                                           g:::::g
+                                                                                                                                                               gggggg      g:::::g
+                                                                                                                                                               g:::::gg   gg:::::g
+                                                                                                                                                                g::::::ggg:::::::g
+                                                                                                                                                                 gg:::::::::::::g
+                                                                                                                                                                   ggg::::::ggg
+                                                                                                                                                                      gggggg
+ */
+/**
+ * https://www.sitepoint.com/tilted-angles-in-sass/
+ * http://codepen.io/mcbenny/pen/ORgWQw
+ *
+ *  Usage:
+ *      SCSS:
+ *          .container {
+                @include tilted(3deg, rgb(255, 255, 255));
+            }
+
+        HTML:
+            <div class="container">...</div>
+ */
+
+@function get-tilted-height($angle) {
+    $a: (100% / 1%);
+    $A: (90deg - $angle);
+    $c: ($a / sin($A));
+    $b: sqrt(pow($c, 2) - pow($a, 2));
+
+    @return (abs($b) * 1%);
+}
+
+@mixin tilted($angle, $color) {
+    $height: get-tilted-height($angle);
+
+    position: relative;
+    background-color: $color;
+
+    &::before {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        left: 0;
+        background-image: linear-gradient($angle, $color 50%, transparent 50%);
+        padding-top: $height;
+        content: '';
+    }
+}
