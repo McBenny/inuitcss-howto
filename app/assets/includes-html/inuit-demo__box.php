@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The "Box" effect</h3>
     <p>This allows you to box off content!</p>
     <p><strong>Example:</strong></p>
@@ -28,5 +27,3 @@
             <p>The body of <span class="bg--12  o-box o-box--huge">the huge box</span>... lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolore nam soluta pariatur repellat qui incidunt vero placeat laboriosam!</p>
         </div>
     </div>
-
-</div>

@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The pack object</h3>
     <p>The pack object simply causes any number of elements to pack up horizontally to automatically fill an equal, fluid width of their parent.</p>
     <p>Simply place the <strong>.o-pack</strong> class on the container element and add an <strong>.o-pack__item</strong> on each element inside, et voilà!</p>
@@ -91,4 +90,3 @@
             </div>
         </div>
     </div>
-</div>

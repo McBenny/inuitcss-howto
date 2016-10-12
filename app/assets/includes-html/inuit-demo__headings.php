@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h2>Headings</h2>
     <p>Headings are not really styled, but just sized relatively to one another: <code>&lt;h1></code> is the biggest, then comes <code>&lt;h2></code>, <code>&lt;h3></code> and of course <code>&lt;h6></code> is the smallest, the general font size.</p>
     <p><strong>Examples:</strong></p>
@@ -44,4 +43,3 @@
         <li><strong>.title</strong>: this is the default class for common attributes on titles,</li>
         <li><strong>.title--1</strong> => <strong>.title--6</strong>: to apply styles for each level of heading independantly.</li>
     </ul>
-</div>

@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>Forcing the ratio</h3>
     <p>This allows you to force the ratio an image, iframe or object to what you desire no matter its initial ratio.</p>
     <p>Built-in ratios are 2:1, 4:3 and 16:9. You can add or change these ratios by editing the <code>$inuit-ratios</code> variable located in <code>./objects/_objects.ratio.scss</code>. I you decide to change them, rewrite the variable in <code>.settings/_settings.global.scss</code>.</p>
@@ -34,4 +33,3 @@
     </div>
 
     <p>This object shall not be confused with the <a href="?page=crop">"Crop" feature</a>.</p>
-</div>

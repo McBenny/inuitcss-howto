@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The inline list</h3>
     <p>This object is here to put all the elements of a list on a single line (as long as there is enough space ;-)).</p>
     <p>Simply place the <strong>.o-list-inline</strong> class in the <code>ul</code> and add a <strong>.o-list-inline__item</strong> on each <code>li</code> of the list, et voilà!</p>
@@ -37,4 +36,3 @@
             </ul>
         </div>
     </div>
-</div>

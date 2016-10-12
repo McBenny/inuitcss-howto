@@ -41,11 +41,9 @@ if ($dev) {
 }
 ?>
 
-<?php include($varSite['includes'].'/navigation.php'); ?>
-
-<h1>This is the homepage</h1>
-
 <div class="dev">
+    <div class="o-wrapper">
+        <?php include($varSite['includes'].'/navigation.php'); ?>
 <?php
 if ($thePage) {
     include ($path.'/'.$varSite['includes'].'/inuit-demo__'.$thePage.'.php');
@@ -53,7 +51,9 @@ if ($thePage) {
     include ($path.'/'.$varSite['includes'].'/inuit-demo__default.php');
 }
 ?>
+    </div>
 </div>
+
 
 <?php
 /*

@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The "Block" structure</h3>
     <p>This structure allows you to display an image and a text under it. Pretty simple!</p>
     <p>It comes with a default spacing between the image and the body of the block and an alignment at the center for both the image and the body.</p>
@@ -89,5 +88,3 @@
             The body of the block... lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolore nam soluta pariatur repellat qui incidunt vero placeat laboriosam!
         </div>
     </div>
-
-</div>

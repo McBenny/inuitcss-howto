@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>Hiding content</h3>
     <p>There are two considerations to take while hiding content: do you want it to be hidden absolutely, or just "visually"? A content that is just "visually hidden" is still accessible to screen readers and search engine. A content that is "hidden" is no more accessible to screen readers nor search engines. So depending on what you try to achieve, you might use different classes.</p>
     <h4>.u-hidden</h4>
@@ -79,5 +78,3 @@
             Hidden from desktops and above...
         </div>
     </div>
-
-</div>

@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h2>Margins</h2>
     <p>There are a few handy classes to manage margins around the blocks.</p>
     <h3 class="u-margin-top-large">Specific widths of margins</h3>
@@ -108,4 +107,3 @@
     <div class="visible-container u-margin-bottom-small">
         <div class="bg--1  u-margin u-margin-top-none u-margin-right-huge">Standard margins all around but none at the top and a huge margin on the right side</div>
     </div>
-</div>

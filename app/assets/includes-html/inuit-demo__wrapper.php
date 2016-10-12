@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The main wrapper</h3>
     <h4>.o-wrapper</h4>
     <p>This class is used as a "main" container, it centers the block into its parent, constrains the content to the <code>$inuit-wrapper-width</code> width, or to be more precise, to a <strong>max-width</strong> of <code>$inuit-wrapper-width</code> and adds a nice padding on the sides.</p>
@@ -22,4 +21,3 @@
     <div class="bg--1  o-wrapper o-wrapper--huge">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore repellat rem recusandae itaque, placeat provident inventore. Impedit omnis, nemo exercitationem earum blanditiis quia. Eligendi expedita ut, minima iusto totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nulla perferendis debitis, ut velit cumque ratione consequuntur vero itaque, dicta earum et fugit ad qui iusto totam quaerat expedita maxime.</p>
     </div>
-</div>

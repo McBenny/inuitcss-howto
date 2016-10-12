@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The layout system</h3>
     <p>The layer system uses a group of classes organised with a container class and contained elements classes, combined with a set of other classes to determine the widths and behaviour of each part of the layout. Thus it gives you the ability to create different layouts with 1, 2, 3, 4... columns easily.</p>
     <h4>.o-layout</h4>
@@ -152,4 +151,3 @@
         <div class="bg--1  o-layout__item u-1/2">First half...</div>
         <div class="bg--12  o-layout__item u-1/2 u-pull-1/4">Second half...</div>
     </div>
-</div>

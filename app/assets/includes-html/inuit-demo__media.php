@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The Media object</h3>
     <p>This object is a simple abstraction of the common display of an image beside a text block.</p>
     <p>The default behaviour puts the image on the left side of the text, the text being aligned to the top of the image.</p>
@@ -64,4 +63,3 @@
     </div>
 
     <p>Note that this object is a little bit like <a href="?page=flag">The "Flag" object</a> with a bit less options.</p>
-</div>

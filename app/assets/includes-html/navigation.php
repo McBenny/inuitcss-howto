@@ -1,10 +1,11 @@
         <nav>
-            <ul class="nav header__nav header__nav--desk" data-title="Navigation">
+            <ul class="nav o-list-inline" data-title="Navigation">
 <?php
 
 foreach ($navigation__urls AS $key => $value) {
+    $current = $key == $thePage ? ' current' : null;
 ?>
-                <li class="nav__item"><a href="?page=<?php echo $key; ?>"><?php echo $value; ?></a>
+                <li class="nav__item o-list-inline__item<?php echo $current; ?>"><a href="?page=<?php echo $key; ?>"><?php echo $value; ?></a>
 <?php
 }
 ?>

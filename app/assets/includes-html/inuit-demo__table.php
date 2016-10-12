@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>Table management</h3>
     <p>Tables are a native HTML feature that has some strange behaviour sometimes. The following classes help to get back some control over it.</p>
     <h4>.o-table</h4>
@@ -79,4 +78,3 @@
             </tr>
         </table>
     </div>
-</div>

@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The Flag object</h3>
     <p>This object is a simple abstraction of the common display of an image beside a text block with some interesting customization tricks.</p>
     <p>The default behaviour puts the image on the left side of the text, the text being aligned to the middle on the vertical axis with the image.</p>
@@ -82,4 +81,3 @@
     </div>
 
     <p>Note that this object is a little bit like <a href="?page=media">The "Media" object</a> but with more options.</p>
-</div>

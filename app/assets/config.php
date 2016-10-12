@@ -175,6 +175,7 @@ $googleAnalytics = array(
             88  Y8 dP""""Yb    YP    88  YboodP dP""""Yb   88   88  YbodP  88  Y8     `YbodP' 88  Yb 88ood8 8bodP' 
         */
 $navigation__urls = array(
+    'home' => '<i class="fa fa-home" aria-hidden="true"></i>',
     'wrapper' => 'The main wrapper',
     'layout' => 'The layout system',
     'margins' => 'The margins',
@@ -294,7 +295,16 @@ $socials = array(
  *          - "path": the path to the CSS file -required-,
  *          - "media": the target media, defaults to 'screen' -optional-.
  */
-$head__css__prepend = array();
+$head__css__prepend = array(
+    'dev' => array(
+        'path' => $path.'/css/font-awesome.min.css',
+        'media' => 'screen'
+    ),
+    'prod' => array(
+        'path' => $path.'/css/font-awesome.min.css',
+        'media' => 'screen'
+    )
+);
 $head__css__list = array(
     'dev' => array(
         'path' => $path.'/css/main.css',

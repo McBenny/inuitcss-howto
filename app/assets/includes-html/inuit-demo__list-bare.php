@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>The bare list</h3>
     <p>This object is just a way to undress any list of its default styles, mainly remove the dots (or squares or circles) and numbers (on ordered lists) from the list-items and erase the left margin.</p>
     <p>Simply place the <strong>.o-list-bare</strong> class in the <code>ul</code> or <code>ol</code> tag where you want to undress the list.</p>
@@ -27,4 +26,3 @@
             </ol>
         </div>
     </div>
-</div>

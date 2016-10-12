@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h3>Cropping</h3>
     <p>This allows you to crop an element on a specific width/height ratio. Perfect if you need to display an image or video for instance in a specific ratio, so that what's beside fits in height.</p>
     <p>Built-in ratios are 2:1, 4:3 and 16:9. You can add or change these ratios by editing the <code>$inuit-crops</code> variable located in <code>./objects/_objects.crop.scss</code>. If you decide to change them, rewrite the variable in <code>.settings/_settings.global.scss</code>.</p>
@@ -78,4 +77,3 @@
     <p>Pay attention that this feature also doesn't enlarge the element that has the <strong>.o-crop__content</strong> class so if your content is smaller than the container, the visual result will not be what you would expect.</p>
 
     <p>This object shall not be confused with the <a href="?page=ratio">"force ratio" feature</a>.</p>
-</div>

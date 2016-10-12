@@ -1,4 +1,3 @@
-<div class="o-wrapper">
     <h2>Paddings</h2>
     <p>There are a few handy classes to manage paddings in blocks.</p>
     <h3 class="u-margin-top-large">Specific widths of padding</h3>
@@ -84,4 +83,3 @@
     <div class="visible-container u-margin-bottom-small  u-padding-left-huge">Huge left padding</div>
     <div class="visible-container u-margin-bottom-small  u-padding-top-small u-padding-bottom-large">A small top padding and a large bottom padding</div>
     <div class="visible-container u-margin-bottom-small  u-padding u-padding-top-none u-padding-right-huge">Standard paddings all around but none at the top and a huge padding on the right side. Adding text so the right padding becomes obvious. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsa voluptatum dolorem sit impedit fugiat id, accusantium excepturi, reprehenderit animi et soluta alias error minus quaerat fuga aspernatur quidem enim.</div>
-</div>
