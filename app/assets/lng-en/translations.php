@@ -57,13 +57,11 @@ C:::::C             o::::o     o::::m::::m   m::::m   m::::m::::m   m::::m   m::
 */
 $project__name = 'The Project Name';
 
-$retourAccueil = 'Return to the home page';
+$video__noFlash = 'The video cannot be played in your browser.';
+$audio__unsupported = 'The sound cannot be played in your browser.';
 
-$video__noFlash = 'La vidéo ne peut être lu par votre navigateur.';
-$audio__unsupported = 'Le son ne peut être lu par votre navigateur.';
-
-$listJours = array('', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
-$listMois = array('', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+$listDays = array('', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+$listMonths = array('', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
 
 
 
