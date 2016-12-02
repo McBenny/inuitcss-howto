@@ -297,22 +297,30 @@ $socials = array(
  */
 $head__css__prepend = array(
     'dev' => array(
-        'path' => $path.'/css/font-awesome.min.css',
-        'media' => 'screen'
+        array(
+            'path' => $path.'/css/font-awesome.min.css',
+            'media' => 'screen'
+        )
     ),
     'prod' => array(
-        'path' => $path.'/css/font-awesome.min.css',
-        'media' => 'screen'
+        array(
+            'path' => $path.'/css/font-awesome.min.css',
+            'media' => 'screen'
+        )
     )
 );
 $head__css__list = array(
     'dev' => array(
-        'path' => $path.'/css/main.css',
-        'media' => 'screen'
+        array(
+            'path' => $path.'/css/main.css',
+            'media' => 'screen'
+        )
     ),
     'prod' => array(
-        'path' => $path.'/css/main.min.css',
-        'media' => 'screen'
+        array(
+            'path' => $path.'/css/main.min.css',
+            'media' => 'screen'
+        )
     )
 );
 $head__css__append = array();
