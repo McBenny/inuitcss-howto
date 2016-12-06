@@ -1,3 +1,6 @@
+<?php
+$index = strpos($phpSelf, 'index.php') > -1 ? '' : 'index.php';
+?>
         <nav>
             <ul class="nav o-list-inline" data-title="Navigation">
 <?php

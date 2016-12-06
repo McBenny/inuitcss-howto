@@ -68,6 +68,7 @@
                                                                    
 */
 error_reporting(0);
+date_default_timezone_set('Australia/Sydney');
 
 //  FIND_VARS
         /*
@@ -81,6 +82,7 @@ $varSite = array(
     'salt' => 'suXeFA6a+?BREQe_eyez-bud3eCuVeTr',
     'robots' => 'index, follow'
 );
+$phpSelf = $_SERVER['PHP_SELF'];
 //  FIND_LANGUAGES
         /*
             88        db    88b 88  dP""b8 88   88    db     dP""b8 888888 .dP"Y8 
